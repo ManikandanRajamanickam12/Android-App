@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Manikandan</string>
+    <string name="Yellow_start">Yellow star</string>
+    <string name="bio">Hi,My Name is Manikandan.
+    \n\nI love Foods.
+    \n\nMy Hobby is Sleeping.
+    \n\n"Lorem ipsum" dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+     \n\n"Lorem ipsum" dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        \n\n"Lorem ipsum" dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        \n\n"Lorem ipsum" dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        \n "Lorem ipsum" dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </string>
+    <string name="nick_name">What\'s your Nick Name?</string>
+    <string name="button">Done</string>
+    <string name="Yellow_star">yellow star</string>
+</resources>

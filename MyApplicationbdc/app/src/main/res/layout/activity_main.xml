@@ -1,0 +1,40 @@
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34495E">
+
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:src="@drawable/manii"
+       android:background="#34495E"
+       android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:text="Happybirthday"
+        android:textColor="#52BE80 "
+        android:textSize="50sp"/>.
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FromMani"
+        android:padding="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textSize="35sp"/>.
+</RelativeLayout>
+

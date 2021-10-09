@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#C31DA7 </item>
+        <item name="colorPrimaryDark">#982F34 </item>
+        <item name="colorAccent">#2F9C9B </item>
+    </style>
+    <style name="CustomText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#F62020 </item>
+        <item name="android:textStyle">italic</item>
+
+    </style>
+
+</resources>

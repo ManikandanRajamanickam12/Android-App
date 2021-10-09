@@ -1,0 +1,9 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">ONCLICK2</string>
+    <string name="NumberActivity_name">Numbers</string>
+    <string name="FamilyActivity_name">Family</string>
+    <string name="colorActivity_name">colors</string>
+    <string name="phraseActivity_name">Phrase</string>
+
+</resources>

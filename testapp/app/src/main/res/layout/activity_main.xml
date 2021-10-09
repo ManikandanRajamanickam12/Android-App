@@ -1,0 +1,114 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <EditText
+            android:id="@+id/namefield"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:paddingBottom="15dp"
+            android:inputType="textCapWords"/>
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:text="quantity"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:orientation="horizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+
+                android:onClick="increment"
+                android:padding="15dp"/>
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#000000"
+
+                />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:onClick="decrement"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:id="@+id/ten"
+                android:textSize="16sp"
+                android:paddingLeft="2dp"/>
+            <CheckBox
+                android:id="@+id/twenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="20"
+                android:layout_marginLeft="30dp"
+                android:textSize="16sp" />
+            <CheckBox
+                android:id="@+id/thirty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="30"
+                android:layout_marginLeft="30dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="order summary"
+            android:textSize="25dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/order_summary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0"
+            android:textSize="25sp"
+            android:paddingLeft="10dp"
+            android:textColor="#000000" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submitOrder"
+            android:text="Order" />
+
+    </LinearLayout>
+
+</ScrollView>

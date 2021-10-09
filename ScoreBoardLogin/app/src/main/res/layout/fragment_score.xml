@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.scoreboard_login.ScoreFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgnd"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/card_titleid"
+                android:layout_width="201dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/title_name"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/title"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.013" />
+
+            <TextView
+                android:id="@+id/teamA_id"
+                android:layout_width="103dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="56dp"
+                android:text="Team A"
+                android:textAlignment="center"
+                android:textColor="@color/teamA"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_titleid" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="77dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="16dp"
+                android:text="Team B"
+                android:textAlignment="center"
+                android:textColor="@color/teamB"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/teamA_id"
+                app:layout_constraintTop_toBottomOf="@+id/card_titleid" />
+
+            <TextView
+                android:id="@+id/pointA_id"
+                android:layout_width="66dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/pointB_id"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/teamA_id" />
+
+            <TextView
+                android:id="@+id/pointB_id"
+                android:layout_width="47dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/pointA_id"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <Button
+                android:id="@+id/oneA_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/add_one"
+                app:layout_constraintEnd_toStartOf="@+id/oneB_id"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pointA_id" />
+
+            <Button
+                android:id="@+id/twoA_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/add_two"
+                app:layout_constraintEnd_toStartOf="@+id/twoB_id"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/oneA_id" />
+
+            <Button
+                android:id="@+id/threeA_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/add_three"
+                app:layout_constraintBottom_toTopOf="@+id/reset"
+                app:layout_constraintEnd_toStartOf="@+id/threeB_id"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/twoA_id"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <Button
+                android:id="@+id/twoB_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/add_two"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/twoA_id"
+                app:layout_constraintTop_toBottomOf="@+id/oneB_id" />
+
+            <Button
+                android:id="@+id/oneB_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="@string/add_one"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/oneA_id"
+                app:layout_constraintTop_toBottomOf="@+id/pointB_id" />
+
+            <Button
+                android:id="@+id/threeB_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/add_three"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/threeA_id"
+                app:layout_constraintTop_toBottomOf="@+id/twoB_id"
+                app:layout_constraintVertical_bias="0.012" />
+
+
+            <TextView
+                android:id="@+id/wonteam_id"
+                android:layout_width="114dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Pending"
+                android:textAlignment="center"
+                android:textColor="#4499A2"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/winteam_id" />
+
+            <TextView
+                android:id="@+id/winteam_id"
+                android:layout_width="235dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/win_team"
+                android:textAlignment="center"
+                android:textColor="#3E4263"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toTopOf="@+id/wonteam_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reset" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="256dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="ENJOY THE GAME"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wonteam_id" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Reset"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/winteam_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/threeA_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

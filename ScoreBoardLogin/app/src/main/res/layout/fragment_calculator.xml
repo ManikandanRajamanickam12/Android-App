@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.scoreboard_login.CalculatorFragment">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="222dp"
+                android:layout_height="50dp"
+                android:text="Calculator"
+                android:textAlignment="center"
+                android:textColor="#2336DF"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="69dp" />
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="116dp"
+                android:layout_height="44dp"
+                android:ems="10"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="66dp"
+                tools:layout_editor_absoluteY="194dp" />
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="126dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="237dp"
+                tools:layout_editor_absoluteY="190dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                tools:layout_editor_absoluteX="88dp"
+                tools:layout_editor_absoluteY="311dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                tools:layout_editor_absoluteX="237dp"
+                tools:layout_editor_absoluteY="311dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                tools:layout_editor_absoluteX="95dp"
+                tools:layout_editor_absoluteY="422dp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                tools:layout_editor_absoluteX="241dp"
+                tools:layout_editor_absoluteY="416dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Result"
+                android:textAlignment="center"
+                android:textColor="#F33131"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="130dp"
+                tools:layout_editor_absoluteY="535dp" />
+
+            <EditText
+                android:id="@+id/editTextNumber3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="112dp"
+                tools:layout_editor_absoluteY="599dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
